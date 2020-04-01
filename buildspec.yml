@@ -1,0 +1,27 @@
+# Do not change version. This is the version of aws buildspec, not the version of your buldspec file.
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install -g typescript
+      - npm install
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Compiling typescript code to javascript
+      - tsc index.ts
+  post_build:
+    commands:
+      - echo Build completed on `date`
+# Include only the files required for your application to run.
+artifacts:
+  type: zip
+  files:
+    - index.js
+    - package.json
+    - 'node_modules/**/*'
