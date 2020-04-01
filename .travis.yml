@@ -1,9 +1,11 @@
 language: node_js
+node_js:
+  - lts/*
 branches:
   only:
   - node-ts
 
-before_script:
+before_install:
  - npm install -g typescript
 script:
  - npm run-script build
