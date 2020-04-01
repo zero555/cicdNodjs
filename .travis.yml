@@ -17,3 +17,4 @@ deploy:
   app: cc-node-ts
   on:
     - node-ts
+  run: npm start
