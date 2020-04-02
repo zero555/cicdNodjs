@@ -3,7 +3,7 @@ import * as url from 'url';
 import * as querystring from 'querystring';
 
 const hostname:string = 'localhost';
-const port:number = 8080;
+const port:number = Number(process.env.PORT) || 8080;
 
 const server:http.Server = http.createServer((request, response) => {
     const urlObject:url.Url = url.parse(request.url);
