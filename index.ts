@@ -27,6 +27,6 @@ const server:http.Server = http.createServer((request, response) => {
     response.write(`<h1>Quadratzahlen ${lowestNumber}<sup>2</sup> bis ${highestNumber}<sup>2</sup></h1>`);
     response.write(`${table}`);
     response.end('</body></html>');
-}).listen(port,hostname,() => {
+}).listen(port,() => {
     console.log(`Server gestartet auf http://${hostname}:${port}`);
 });
