@@ -1,4 +1,4 @@
-const app = require('../app');
+/*const app = require('../app');
 
 const request = require('supertest');
 
@@ -13,3 +13,4 @@ describe('gae_node_request_example', () => {
     });
   });
 });
+*/
