@@ -12,8 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "http": "latest",
     "@types/node": "latest",
-    "querystring": "latest"
+    "http": "latest",
+    "querystring": "latest",
+    "typescript": "^3.8.3"
   }
 }
