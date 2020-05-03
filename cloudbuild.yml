@@ -1,6 +1,7 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'eu.gcr.io/test-275412/nodejs', '.']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push','eu.gcr.io/test-275412/nodejs']
   - name: "gcr.io/cloud-builders/gcloud"
     args: ["app", "deploy"]
-images: ['eu.gcr.io/test-275412/nodejs']
