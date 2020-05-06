@@ -1,7 +1,7 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'eu.gcr.io/cicdtest124/nodejs', '.']
+    args: ['build', '-t', 'eu.gcr.io/tas13t13t13aefaq/nodejs', '.']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push','eu.gcr.io/cicdtest124/nodejs']
+    args: ['push','eu.gcr.io/tas13t13t13aefaq/nodejs']
   - name: "gcr.io/cloud-builders/gcloud"
     args: ["app", "deploy"]
